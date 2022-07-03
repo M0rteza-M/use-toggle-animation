@@ -1,4 +1,7 @@
 <div align="center">
+<p align="center">
+    <img src="./images/logo.png"/>
+</p>
 <h1 align="center">use-toggle-animation</h1>
 <p align="center">A simple hook for toggling with animation</p>
 

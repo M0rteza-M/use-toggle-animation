@@ -3,3 +3,4 @@ yarn-error.log
 .next
 node_modules
 out
+images/logo.svg
