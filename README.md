@@ -17,11 +17,11 @@
 
 ## Installation
 ```
-yarn add dpgen
+yarn add use-toggle-animation
 ```
 or
 ```
-npm i dpgen
+npm i use-toggle-animation
 ```
 
 ## Contributing
