@@ -4,7 +4,8 @@
   "description": "A simple hook for toggling with animation",
   "author": {
     "name": "Morteza Madani",
-    "email": "mo.jrn68@gmail.com"
+    "email": "mo.jrn68@gmail.com",
+    "url": "https://github.com/M0rteza-M/"
   },
   "keywords": [
     "react",
