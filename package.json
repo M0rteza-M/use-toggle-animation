@@ -5,16 +5,26 @@
     "use-toggle-animation"
   ],
   "scripts": {
+    "prepare": "yarn husky install",
     "build": "yarn build:hook && yarn build:example",
     "build:example": "yarn workspace example package",
     "build:hook": "yarn workspace use-toggle-animation build",
     "bump": "yarn workspace use-toggle-animation bump",
+    "test": "yarn workspace use-toggle-animation test",
+    "lint": "yarn workspace use-toggle-animation lint",
+    "lint:fix": "yarn workspace use-toggle-animation lint:fix",
     "develop": "yarn watch",
     "watch": "concurrently -n Hook,Example \"yarn watch:hook\" \"yarn watch:example\"",
     "watch:example": "yarn workspace example develop",
-    "watch:hook": "yarn workspace use-toggle-animation watch"
+    "watch:hook": "yarn workspace use-toggle-animation watch",
+    "prepare-gpr": "yarn workspace use-toggle-animation prepare-gpr",
+    "release": "yarn workspace use-toggle-animation standard-version"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3"
+  },
   "license": "MIT",
   "dependencies": {
     "concurrently": "^6.2.1"

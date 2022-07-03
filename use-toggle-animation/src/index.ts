@@ -1,1 +1,1 @@
-export { default as useToggleAnimation } from './useToggleAnimation';
+export {default as useToggleAnimation} from './useToggleAnimation';

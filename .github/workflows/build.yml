@@ -1,0 +1,46 @@
+name: Build
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [16.x]
+                cache: yarn
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+
+            - name: Set up Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Install dependencies
+              run: yarn install
+
+            - name: Run the lints
+              run: yarn lint
+
+            - name: Run the tests
+              run: yarn test
+
+            - name: Upload coverage to Codecov
+              uses: codecov/codecov-action@v3
+
+            - name: Build
+              run: yarn build
+
+            - name: Archive production
+              uses: actions/upload-artifact@v3
+              with:
+                  name: lib
+                  path: use-toggle-animation/lib

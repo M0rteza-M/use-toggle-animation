@@ -1,0 +1,20 @@
+{
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"editor.formatOnSave": false,
+	"editor.formatOnPaste": false,
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"stylelint.enable": true,
+	"stylelint.validate": ["css", "scss"],
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"cSpell.words": [],
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"conventionalCommits.scopes": [
+		
+	]
+}
