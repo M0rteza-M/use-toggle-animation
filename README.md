@@ -1,3 +1,4 @@
+<div align="center">
 <h1 align="center">use-toggle-animation</h1>
 <p align="center">A simple hook for toggling with animation</p>
 

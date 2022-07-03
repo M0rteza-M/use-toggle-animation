@@ -13,7 +13,7 @@ jobs:
         strategy:
             matrix:
                 node-version: [16.x]
-                cache: yarn
+                cache: 'yarn'
 
         steps:
             - name: Checkout repository
