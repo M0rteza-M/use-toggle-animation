@@ -1,0 +1,44 @@
+{
+  "name": "use-toggle-animation",
+  "version": "1.1.0",
+  "description": "A simple hook for toggling with animation",
+  "author": {
+    "name": "Morteza Madani",
+    "email": "hello@colbyfayock.com",
+    "url": "https://twitter.com/colbyfayock"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks"
+  ],
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "bump": "npm version",
+    "example": "cd example && yarn install && yarn package",
+    "prepublishOnly": "yarn build",
+    "watch": "concurrently -k \"tsc -w\" \"nodemon\" & jest --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/react": "^13.3.0",
+    "@types/jest": "^28.1.4",
+    "jest": "^28.1.2",
+    "jest-environment-jsdom": "^28.1.2",
+    "nodemon": "^2.0.12",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colbyfayock/use-toggle-animation"
+  },
+  "bugs": {
+    "url": "https://github.com/colbyfayock/use-toggle-animation/issues"
+  },
+  "dependencies": {}
+}

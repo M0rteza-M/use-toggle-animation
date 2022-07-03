@@ -1,0 +1,30 @@
+{
+  "name": "example",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "develop": "yarn dev",
+    "export": "next export",
+    "package": "yarn build && yarn export",
+    "refresh": "yarn install --force",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^12.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "18.0.1",
+    "type-fest": "^2.15.1",
+    "typescript": "^4.7.4"
+  }
+}
