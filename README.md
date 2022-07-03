@@ -2,7 +2,7 @@
 <h1 align="center">use-toggle-animation</h1>
 <p align="center">A simple hook for toggling with animation</p>
 
-![CI/CD](https://github.com/M0rteza-M/use-toggle-animation/workflows/publish/badge.svg)
+![CI/CD](https://github.com/M0rteza-M/use-toggle-animation/actions/workflows/build.yml/badge.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/M0rteza-M/use-toggle-animation/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange.svg)](https://github.com/M0rteza-M/use-toggle-animation/compare)
 [![codecov](https://codecov.io/gh/M0rteza-M/use-toggle-animation/branch/master/graph/badge.svg)](https://codecov.io/gh/M0rteza-M/use-toggle-animation) [![CodeFactor](https://www.codefactor.io/repository/github/M0rteza-M/use-toggle-animation/badge)](https://www.codefactor.io/repository/github/M0rteza-M/use-toggle-animation)
