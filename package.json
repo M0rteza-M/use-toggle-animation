@@ -18,6 +18,7 @@
     "watch:example": "yarn workspace example develop",
     "watch:hook": "yarn workspace use-toggle-animation watch",
     "prepare-gpr": "yarn workspace use-toggle-animation prepare-gpr",
+    "prerelease": "yarn lint && yarn test && yarn build:hook",
     "release": "yarn workspace use-toggle-animation standard-version"
   },
   "devDependencies": {
