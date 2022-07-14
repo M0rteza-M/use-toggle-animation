@@ -36,7 +36,6 @@ jobs:
           node-version: 16
       - name: Build Docusaurus website
         run: |
-          cd website
           yarn install --frozen-lockfile
           yarn build
       - name: Deploy to GitHub Pages
@@ -58,7 +57,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: yarn install --frozen-lockfile
-      - run: yarn publish --access=public
+      - run: yarn workspace use-toggle-animation publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
   publish-gpr:
@@ -75,6 +74,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: yarn install --frozen-lockfile
       - run: yarn prepare-gpr
-      - run: yarn publish --access=public
+      - run: yarn workspace use-toggle-animation publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
