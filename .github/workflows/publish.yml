@@ -74,7 +74,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: yarn install --frozen-lockfile
       - run: yarn prepare-gpr
-      - run: cd use-toggle-animation
-      - run: yarn publish --access=public
+      - run: yarn workspace @M0rteza-M/use-toggle-animation publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
