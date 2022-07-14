@@ -1,21 +1,21 @@
 {
   "private": true,
   "workspaces": [
-    "example",
+    "website",
     "use-toggle-animation"
   ],
   "scripts": {
     "prepare": "yarn husky install",
-    "build": "yarn build:hook && yarn build:example",
-    "build:example": "yarn workspace example package",
+    "build": "yarn build:hook && yarn build:website",
+    "build:website": "yarn workspace website build",
     "build:hook": "yarn workspace use-toggle-animation build",
     "bump": "yarn workspace use-toggle-animation bump",
     "test": "yarn workspace use-toggle-animation test",
     "lint": "yarn workspace use-toggle-animation lint",
     "lint:fix": "yarn workspace use-toggle-animation lint:fix",
     "develop": "yarn watch",
-    "watch": "concurrently -n Hook,Example \"yarn watch:hook\" \"yarn watch:example\"",
-    "watch:example": "yarn workspace example develop",
+    "watch": "concurrently -n Hook,Website \"yarn watch:hook\" \"yarn watch:website\"",
+    "watch:website": "yarn workspace website start",
     "watch:hook": "yarn workspace use-toggle-animation watch",
     "prepare-gpr": "yarn workspace use-toggle-animation prepare-gpr",
     "prerelease": "yarn lint && yarn test && yarn build:hook",
