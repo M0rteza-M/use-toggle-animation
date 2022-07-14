@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/M0rteza-M/use-toggle-animation/compare/v0.1.0...v0.1.1) (2022-07-14)
+
+
+### Bug Fixes
+
+* better doc ci ([e294cd6](https://github.com/M0rteza-M/use-toggle-animation/commit/e294cd6b0205850485ec55de69118cd3cb0db00c))
+
 ## 0.1.0 (2022-07-14)
 
 

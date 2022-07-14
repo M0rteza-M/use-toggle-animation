@@ -1,6 +1,6 @@
 {
   "name": "use-toggle-animation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple hook for toggling with animation",
   "author": {
     "name": "Morteza Madani",
