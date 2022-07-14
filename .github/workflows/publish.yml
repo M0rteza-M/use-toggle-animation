@@ -27,7 +27,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  deploy-docusaurus:
+  gh-pages:
     needs: build
     steps:
       - uses: actions/checkout@v3
@@ -74,6 +74,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: yarn install --frozen-lockfile
       - run: yarn prepare-gpr
-      - run: yarn workspace use-toggle-animation publish --access=public
+      - run: cd use-toggle-animation
+      - run: yarn publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
