@@ -72,6 +72,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+          always-auth: true
       - run: yarn install --frozen-lockfile
       - run: yarn prepare-gpr
       - run: yarn workspace @M0rteza-M/use-toggle-animation publish
