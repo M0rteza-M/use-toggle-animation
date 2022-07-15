@@ -73,7 +73,7 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           always-auth: true
-      - run: npm ci
+      - run: npm i
       - run: npm run prepare-gpr --workspace=use-toggle-animation
       - run: npm run publish --workspace=@M0rteza-M/use-toggle-animation
         env:
