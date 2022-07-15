@@ -76,7 +76,7 @@ jobs:
           scope: M0rteza-M
       - run: yarn install --frozen-lockfile
       - run: yarn prepare-gpr
-      - run: yarn workspace @M0rteza-M/use-toggle-animation publish
+      - run: yarn workspace @M0rteza-M/use-toggle-animation publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
