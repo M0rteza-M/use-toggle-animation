@@ -73,8 +73,10 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           always-auth: true
-      - run: npm i
-      - run: npm run prepare-gpr --workspace=use-toggle-animation
-      - run: npm run publish --workspace=@M0rteza-M/use-toggle-animation
+          scope: M0rteza-M
+      - run: yarn install --frozen-lockfile
+      - run: yarn prepare-gpr
+      - run: yarn workspace @M0rteza-M/use-toggle-animation publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
